@@ -1,0 +1,610 @@
+@import url(./bootstrap.min.css);
+@import url(./config.css);
+@import url(./global.css);
+@import url(./custom.css);
+@import url(./responsive.css);
+
+/* Geral */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: rgb(227, 250, 227);
+}
+.cssgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#navbar {
+  grid-column: 1/4;
+  display: flex;
+  background-color: rgb(113, 179, 113);
+  width: 100%;
+}
+#navbar > ul {
+  width: 100%;
+  align-content: flex-end;
+}
+
+#navbar > li {
+  align-content: flex-end;
+}
+
+#btnPub {
+  position: fixed;
+  padding: 1em;
+  font-size: 1rem;
+  z-index: 2;
+  top: 85%;
+  left: 67%;
+}
+#btnMarcar {
+  position: fixed;
+  padding: 1em;
+  font-size: 1rem;
+  z-index: 2;
+  top: 85%;
+  left: 57%;
+}
+#btnPub > a {
+  color: white;
+}
+#cssfooter {
+  background-color: black;
+  grid-column: 1 /-1;
+  grid-row: 14 / 21;
+}
+#cssfooter > hr {
+  background-color: white;
+  color: white;
+}
+#cssfooter > h1 {
+  color: white;
+}
+#cssfooter > h3 {
+  color: white;
+}
+#cssfooter > h3 > a {
+  color: white;
+  text-decoration: none;
+}
+#cssfooter > li {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-content: flex-end;
+  font-size: 20px;
+}
+#cssfooter > p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Home */
+#conteudo {
+  background-color: rgb(227, 250, 227);
+  margin-left: 30px;
+  grid-column: 1/-1;
+  grid-row: 1 / 10;
+}
+#ranking {
+  background-color: rgb(134, 211, 134);
+  height: 100%;
+  grid-column: 4/4; /*
+  grid-row: 1 / 16; */
+  margin: 0px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Eventos */
+.eventos {
+  background-color: rgb(134, 211, 134);
+  height: 100%;
+  grid-column: 1/1;
+  grid-row: 1 / 4;
+  width: 250px;
+  margin-left: -200px;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+  z-index: 2;
+  border: 2px solid rgb(115, 184, 115);
+  text-align: center;
+  border-radius: 10px;
+}
+.eventos:hover {
+  transform: translateX(180px);
+}
+.marcados {
+  margin-left: 10px;
+  height: 100%;
+}
+/* floresta */
+
+#floresta {
+  text-align: center;
+  grid-column: 1 /12;
+  grid-row: 1 / 9;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.dadosFloresta {
+  grid-column: 2 /9;
+  grid-row: 10 / 13;
+  border: 2px solid black;
+}
+.dadosFloresta > h5 {
+  margin-left: 10px;
+}
+/* Login */
+
+.campos {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 2 /-1;
+  /* grid-row: 1 / 7; */
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #dbdbdb;
+}
+
+.logoEnome {
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 20px;
+  grid-column: 1 /2;
+  /* grid-row: 1 / 7; */
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid #dbdbdb;
+}
+.logoEnome > img {
+  margin-top: 10px;
+}
+.campos > label:first-child {
+  margin-top: 20px;
+}
+.campos > label {
+  color: black;
+  font-size: 20px;
+  display: block;
+}
+.campos > p {
+  margin-top: 10px;
+}
+.campos > input {
+  width: 20vw;
+  font-size: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.campos > button {
+  display: block;
+  justify-self: center;
+}
+.campos > hr {
+  margin-top: 40px;
+}
+.center > button {
+  margin-top: 20px;
+  font-size: 25px;
+  width: 300px;
+  height: 50px;
+}
+.criarcontaspace {
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  grid-column: 1 /-1;
+  /* grid-row: 7 / 10; */
+  font-size: 25px;
+  text-align: center;
+  align-self: center;
+  padding: 20px;
+  border: 2px solid #dbdbdb;
+}
+
+/* Cadastro */
+
+.cadastroform {
+  padding-bottom: 20px;
+  background-color: white;
+  grid-column: 1 /4;
+  /* grid-row: 1 / 8; */
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #dbdbdb;
+}
+
+.cadastroform > input {
+  display: block;
+  margin-left: 35%;
+  margin-bottom: 10px;
+  width: 30%;
+  font-size: 20px;
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.loginspace {
+  margin-top: 20px;
+  background-color: white;
+  height: 100px;
+  grid-column: 2 /2;
+  /* grid-row: 8 / 8; */
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+.loginspace > p {
+  margin-top: -10px;
+}
+
+.cadastroform > button {
+  margin-top: 10px;
+}
+
+/* Criar publicação */
+
+#publicacaoForm {
+  background-color: white;
+  grid-column: 3 /9;
+  grid-row: 2 / 11;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+#publicacaoForm > h1 {
+  display: inline;
+}
+#publicacaoForm > button {
+  margin-left: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  display: inline;
+}
+#publicacaoForm > textarea {
+  display: block;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* Perfil */
+.perfil {
+  background-color: white;
+  grid-column: 1 /20;
+  grid-row: 1 / 8;
+}
+
+.perfil > h3 {
+  text-align: center;
+}
+
+.perfil > img {
+}
+
+.perfil > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dadosUsuario {
+  background-color: white;
+  grid-column: 1/5;
+  grid-row: 9 / 21;
+  text-align: center;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: block;
+}
+.row {
+  display: block;
+  margin: 0px;
+}
+
+.col-md-6 {
+  max-width: 90%;
+}
+.card-body {
+  width: 100%;
+}
+#linhaPost {
+  margin: 0px;
+}
+
+/* Botão comentarios */
+#BtnComent {
+  position: fixed;
+  padding: 0.7em;
+  font-size: 1rem;
+  z-index: 2;
+  top: 85%;
+  left: 7%;
+}
+#BtnComentVoltar {
+  position: fixed;
+  padding: 0.7em;
+  font-size: 1rem;
+  z-index: 2;
+  top: 85%;
+  left: 2%;
+}
+/* Welcome tela */
+
+.textWelcome {
+  /* margin: 25px 50px 75px 100px;
+  top margin is 25px
+  right margin is 50px
+  bottom margin is 75px
+  left margin is 100px */
+  margin: 30px 200px 30px 200px;
+  background-color: white;
+  grid-column: 1 /4;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* Responsividade mobile */
+#layoutGeral {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #71b371;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+#verComent {
+  margin-left: 100px;
+  display: inline;
+}
+#ocultarComent {
+  display: inline;
+}
+#layoutPub {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #71b371;
+  border-radius: 10px;
+  padding-bottom: 50px;
+  margin-left: 20px;
+}
+@media (max-width: 530px) {
+  #conteudo {
+    margin-left: -20px;
+    width: 600px;
+    grid-column: 1/1;
+    display: block;
+    padding: 0px;
+  }
+
+  @media (max-width: 300px) {
+  }
+  #conteudo {
+    margin-left: -20px;
+    width: 360px;
+    grid-column: 1/1;
+    display: block;
+    padding: 0px;
+  }
+  #layoutGeral {
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  #card {
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin: 0px;
+  }
+  #row {
+    display: block;
+    margin: 0px;
+  }
+  #layoutPub {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #71b371;
+    border-radius: 10px;
+    padding-bottom: 50px;
+  }
+  #navbar {
+    grid-column: 1/-1;
+    display: flex;
+    background-color: rgb(113, 179, 113);
+  }
+  #ranking {
+    background-color: rgb(134, 211, 134);
+    height: 100%;
+    grid-column: 1/1;
+    grid-row: 1 / 4;
+    margin: 0px;
+    width: 200px;
+    border-radius: 10px;
+    visibility: hidden;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+    display: block;
+  }
+  .eventos {
+    background-color: rgb(134, 211, 134);
+    grid-column: 1/1;
+    grid-row: 1 / 4;
+    width: 250px;
+    margin-left: -240px;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+    z-index: 2;
+    border: 2px solid rgb(115, 184, 115);
+    text-align: center;
+    border-radius: 10px;
+  }
+  #btnPub {
+    position: fixed;
+    padding: 1em;
+    font-size: 1rem;
+    z-index: 2;
+    top: 85%;
+    left: 47%;
+  }
+  #btnMarcar {
+    position: fixed;
+    padding: 1em;
+    font-size: 1rem;
+    z-index: 2;
+    top: 85%;
+    left: 7%;
+  }
+  #BtnComentVoltar {
+    top: 90%;
+    left: -10%;
+  }
+  #navbarSupportedContent {
+    height: 100%;
+  }
+  #BtnComent {
+    top: 90%;
+    left: 10%;
+  }
+  .eventos:hover {
+    transform: translateX(180px);
+  }
+  /* Parte do Login */
+  .campos {
+    grid-column: 1 /2;
+    grid-row: 1 /2;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .logoEnome {
+    grid-column: 1 /2;
+    grid-row: 1 /1;
+    text-align: center;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+  }
+  .logoEnome > img {
+    width: 0px;
+    height: 0px;
+  }
+  .campos > input {
+    width: 80%;
+    font-size: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+  }
+  .criarcontaspace {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    grid-column: 1 /2;
+    grid-row: 2 /2;
+    /* grid-row: 7 / 10; */
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    border: 2px solid #dbdbdb;
+  }
+  /* Parte do Cadastro */
+  .cadastroform {
+    padding-bottom: 20px;
+    background-color: white;
+    grid-column: 1 /4;
+    /* grid-row: 1 / 8; */
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #dbdbdb;
+  }
+
+  .cadastroform > input {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 20px;
+    background-color: #fafafa;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .cadastroform > img {
+    object-fit: contain;
+  }
+  .loginspace {
+    margin-top: 20px;
+    background-color: white;
+    height: 100px;
+    grid-column: 1 /4;
+    /* grid-row: 8 / 8; */
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+  }
+
+  .loginspace > p {
+    margin-top: -10px;
+  }
+
+  .cadastroform > button {
+    margin-top: 10px;
+  }
+  /* Comentarios */
+  #verComent {
+    margin-left: 00px;
+    display: inline;
+  }
+  #ocultarComent {
+    display: inline;
+  }
+  /* Welcome tela */
+  .textWelcome {
+    /* margin: 25px 50px 75px 100px;
+  top margin is 25px
+  right margin is 50px
+  bottom margin is 75px
+  left margin is 100px */
+    margin: 30px 10px 30px 10px;
+    background-color: rgb(3, 0, 0);
+    grid-column: 1 /4;
+    border-radius: 10px;
+    font-size: 40px;
+  }
+}
